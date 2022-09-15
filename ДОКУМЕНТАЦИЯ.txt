@@ -10,12 +10,11 @@ PyJWT==2.4.0
 pytz==2022.2.1
 sqlparse==0.4.2
 tzdata==2022.2
-Которые вы можете скачать по команде: pip install -r req.txt
+django-filter==22.1
+Которые хронятся в папке: pip install -r req.txt
 
-GitHub: https://github.com/mirbek200/third_month-
 
-
-У меня есть 3 папки(product, user, crm) и 1 главная(third_month)
+У меня есть 4 папки(market, user, crm, accounting) и 1 главная(third_month)
 В settings я прописал названия папок которые я скачал тоесть:
 
 INSTALLED_APPS = [
@@ -25,16 +24,16 @@ INSTALLED_APPS = [
     'user',
     'rest_framework_simplejwt',
     'crm',
-	‘django-filters’
-
+    ‘django-filters’
 ]
 
 А в главном urls прописал главные пути
 
 
-Папка product содежит всю работу с продуктами
+Папка market содежит всю работу с продуктами
 Папка user содежит всю работу с пользователями
 Папка crm содежит всю некоторую обшую информацию
+Папка accounting содежит всю бугалтерию а также клиентская база и продуктовая база
 
 
 Для чего нужны разные файлы:
@@ -44,3 +43,5 @@ admin - Возможность пользоваться админкой
 view - Вся Логика
 serializers - Поля для заполнений
 permissions - Ограничения
+
+Проект вы можете найти в Github по этой ссылке: https://github.com/Babushka312/my_3th_project

@@ -1,0 +1,46 @@
+Документация:
+я использовал библиотеки:
+
+asgiref==3.5.2
+Django==4.1.1
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.2.0
+Pillow==9.2.0
+PyJWT==2.4.0
+pytz==2022.2.1
+sqlparse==0.4.2
+tzdata==2022.2
+Которые вы можете скачать по команде: pip install -r req.txt
+
+GitHub: https://github.com/mirbek200/third_month-
+
+
+У меня есть 3 папки(product, user, crm) и 1 главная(third_month)
+В settings я прописал названия папок которые я скачал тоесть:
+
+INSTALLED_APPS = [
+    ...
+    'product',
+    'rest_framework',
+    'user',
+    'rest_framework_simplejwt',
+    'crm',
+	‘django-filters’
+
+]
+
+А в главном urls прописал главные пути
+
+
+Папка product содежит всю работу с продуктами
+Папка user содежит всю работу с пользователями
+Папка crm содежит всю некоторую обшую информацию
+
+
+Для чего нужны разные файлы:
+models - Для базы данных
+urls - Для путей
+admin - Возможность пользоваться админкой
+view - Вся Логика
+serializers - Поля для заполнений
+permissions - Ограничения
